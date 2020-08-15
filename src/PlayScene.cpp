@@ -400,6 +400,11 @@ void PlayScene::start()
 	
 	m_bDebugMode = false;
 	m_bPatrolMode = false;
+
+	//Background
+	m_pBackground = new Button("A4 bg.png");
+	m_pBackground->getTransform()->position = glm::vec2(0.0f, 0.0f);
+	
 	
 	// Plane Sprite
 	m_pPlaneSprite = new Plane();

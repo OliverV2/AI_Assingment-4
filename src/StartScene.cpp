@@ -73,12 +73,11 @@ void StartScene::start()
 	m_pInstructionsLabe2->setParent(this);
 	addChild(m_pInstructionsLabe2);
 
-	m_pInstructionsLabe3 = new Label("101276472", "Consolas", 40,Green, glm::vec2(400.0f, 180.0f));
+	m_pInstructionsLabe3 = new Label("101276472", "Consolas", 40,Green, glm::vec2(400.0f, 200.0f));
 	m_pInstructionsLabe3->setParent(this);
 	addChild(m_pInstructionsLabe3);
 
-
-	m_pInstructionsLabe4 = new Label("Click 'Start' to play", "Consolas", 40, blue, glm::vec2(400.0f, 220.0f));
+	m_pInstructionsLabe4 = new Label("Click 'Start' to play", "Consolas", 40, blue, glm::vec2(400.0f, 250.0f));
 	m_pInstructionsLabe4->setParent(this);
 	addChild(m_pInstructionsLabe4);
 
