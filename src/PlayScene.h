@@ -2,6 +2,8 @@
 #ifndef __PLAY_SCENE__
 #define __PLAY_SCENE__
 
+
+
 #include "Scene.h"
 #include "Plane.h"
 #include "Player.h"
@@ -10,7 +12,7 @@
 #include "Obstacle.h"
 #include "PathNode.h"
 #include "GameObject.h"
-#include "Background"
+#include <Background.h>
 
 
 
@@ -41,7 +43,7 @@ private:
 
 	Plane* m_pPlaneSprite;
 	Player* m_pPlayer;
-	Button* m_pBackground;
+	Background* m_pBackground;
 	bool m_playerFacingRight;
 	bool m_bPlayerHasLOS;
 
