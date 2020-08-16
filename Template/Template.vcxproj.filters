@@ -108,9 +108,6 @@
     <ClCompile Include="..\src\PathNode.cpp">
       <Filter>Game Objects</Filter>
     </ClCompile>
-    <ClCompile Include="Background.cpp">
-      <Filter>UI Objects</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\StartScene.h">
@@ -232,9 +229,6 @@
     </ClInclude>
     <ClInclude Include="..\src\PathNode.h">
       <Filter>Game Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Background.h">
-      <Filter>UI Objects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

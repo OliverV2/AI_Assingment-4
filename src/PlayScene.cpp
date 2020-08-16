@@ -14,6 +14,8 @@ PlayScene::~PlayScene()
 
 void PlayScene::draw()
 {
+	m_pBackground->draw();
+	
 	drawDisplayList();
 
 	if(m_bDebugMode)
@@ -30,8 +32,6 @@ void PlayScene::draw()
 
 		Util::DrawRect(m_pObstacle->getTransform()->position - glm::vec2(m_pObstacle->getWidth() * 0.5f, m_pObstacle->getHeight() * 0.5f),
 			m_pObstacle->getWidth(), m_pObstacle->getHeight());
-
-		m_pBackground->draw();
 			
 		m_displayGrid();
 
@@ -387,7 +387,6 @@ void PlayScene::start()
 {
 	m_bPlayerHasLOS = false;
 
-	TextureManager::Instance()->load("A4 bg.png", "bg");
 	SoundManager::Instance().allocateChannels(16);
 	SoundManager::Instance().setMusicVolume(40);
 	SoundManager::Instance().setSoundVolume(40);
@@ -405,10 +404,7 @@ void PlayScene::start()
 	
 	m_bDebugMode = false;
 	m_bPatrolMode = false;
-
-	//Background
-	m_pBackground = new Background({0, 0, 800, 560}, {0.0f, 0.0f, 800.0f, 560.0f},
-	                               Renderer::Instance()->getRenderer(), TextureManager::Instance()->getTexture("bg"));
+	
 	
 	// Plane Sprite
 	m_pPlaneSprite = new Plane();
